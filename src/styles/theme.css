@@ -1,0 +1,14 @@
+:root {
+    /*Backgrounds*/
+    --color-primary-background: #22101C;
+
+    /*Text*/
+    --color-primary-text: #FFFFF9;
+    --color-secondary-text: #64748b;
+
+    /*Border*/
+    --color-primary-border: #382833;
+
+    /*Font*/
+    --font-display: "Plus Jakarta Sans", system-ui, sans-serif;
+}

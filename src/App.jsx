@@ -1,9 +1,12 @@
-import { Button } from "@mui/material";
+import { MainMenu } from "./pages/MainMenu/MainMenu";
+import { Header } from "./components/layout/Header/Header";
+import { Footer } from "./components/layout/Footer/Footer";
 
 function App() {
   return (
     <>
-      <Button variant="contained">Hello world</Button>
+      <Header />
+      <MainMenu />
     </>
   );
 }
