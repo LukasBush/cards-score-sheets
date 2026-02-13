@@ -1,13 +1,24 @@
+// React
+import { Routes, Route } from "react-router-dom";
+
+//Layouts
+import { HeaderOnlyLayout } from "./layouts/HeaderOnly";
+import { HeaderFooterLayout } from "./layouts/HeaderFooter/HeaderFooter";
+
+//Components
 import { MainMenu } from "./pages/MainMenu/MainMenu";
-import { Header } from "./components/layout/Header/Header";
-import { Footer } from "./components/layout/Footer/Footer";
+import { OhShit } from "./pages/OhShit/OhShit";
 
 function App() {
   return (
-    <>
-      <Header />
-      <MainMenu />
-    </>
+    <Routes>
+      <Route element={<HeaderOnlyLayout />}>
+        <Route path="/" element={<MainMenu />} />
+      </Route>
+      <Route path="/game" element={<HeaderFooterLayout />}>
+        <Route path="oh-shit" element={<OhShit />} />
+      </Route>
+    </Routes>
   );
 }
 

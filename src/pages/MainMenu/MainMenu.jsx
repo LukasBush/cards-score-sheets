@@ -9,12 +9,14 @@ import { Typography } from "@mui/material";
 
 //Project Imports
 import { GameArray } from "./GameObject.js";
+import { useNavigate } from "react-router-dom";
 
 //Styles
 import { StylesMainMenuMUI } from "./StylesMainMenuMUI.js";
 import "./StylesMainMenu.css";
 
 export function MainMenu() {
+  const navigate = useNavigate();
   return (
     <>
       <nav className="main-menu-container">
@@ -28,7 +30,10 @@ export function MainMenu() {
                 disablePadding
                 sx={StylesMainMenuMUI.listItem}
               >
-                <ListItemButton sx={StylesMainMenuMUI.button}>
+                <ListItemButton
+                  sx={StylesMainMenuMUI.button}
+                  onClick={() => navigate(item.route)}
+                >
                   <Box sx={StylesMainMenuMUI.iconBadge}>{Icon && <Icon />}</Box>
                   <ListItemText
                     primary={

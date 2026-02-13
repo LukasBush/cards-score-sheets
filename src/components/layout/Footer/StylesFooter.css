@@ -1,0 +1,9 @@
+.footer-container {
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+
+  padding: 1rem;
+  border-top: 0.0625rem solid var(--color-primary-border);
+  background: var(--color-primary-background);
+}
