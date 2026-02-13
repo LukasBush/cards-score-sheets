@@ -1,7 +1,7 @@
 import "./StylesFooter.css";
 import { StylesFooterMUI } from "./StylesFooterMUI";
 import { Button } from "@mui/material";
-import PlayArrowIcon from "@mui/icons-material/PlayArrow";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 export function Footer() {
   return (
@@ -10,11 +10,11 @@ export function Footer() {
         <Button
           fullWidth
           variant="contained"
-          endIcon={<PlayArrowIcon />}
+          endIcon={<ArrowForwardIcon />}
           disableRipple
           sx={StylesFooterMUI.button}
         >
-          Start Game
+          Enter Player Names
         </Button>
       </footer>
     </div>

@@ -1,0 +1,34 @@
+.setup-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        margin: .5rem .5rem 0 .5rem;
+    }
+
+    h3 {
+        margin: .5rem .5rem 1rem .5rem;
+        color: var(--color-secondary-text)
+    }
+}
+
+.setup-sub-header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h3 {
+        margin: 1rem 0 0 0
+    }
+
+    p {
+        margin: .5rem 0;
+        color: var(--color-secondary-text)
+    }
+}
+
+.player-count-button-row {
+    display: flex;
+    justify-content: space-evenly;
+}

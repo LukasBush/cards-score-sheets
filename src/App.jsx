@@ -2,9 +2,8 @@
 import { Routes, Route } from "react-router-dom";
 
 //Layouts
-import { HeaderOnlyLayout } from "./layouts/HeaderOnly";
-import { HeaderFooterLayout } from "./layouts/HeaderFooter/HeaderFooter";
-
+import { HeaderOnlyLayout } from "./layouts/PageLayouts/HeaderOnly";
+import { HeaderFooterLayout } from "./layouts/PageLayouts/HeaderFooter/HeaderFooter";
 //Components
 import { MainMenu } from "./pages/MainMenu/MainMenu";
 import { OhShit } from "./pages/OhShit/OhShit";
